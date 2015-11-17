@@ -160,7 +160,7 @@ MySQL is a *relational database management system* (RDBMS) and is a popular comp
 
 2.  Run `mysql_secure_installation` to remove the test database and any extraneous user permissions added during the initial installation process:
 
-        mysql_secure_installation
+        sudo mysql_secure_installation
 
     It is recommended that you select yes (`y`) for all questions. If you already have a secure root password, you do not need to change it.
 
@@ -174,10 +174,10 @@ Next, you can create a database and grant your users permissions to use database
 
     Enter MySQL's root password when prompted.
 
-2.  Create a database and grant your users permissions on it. Change the database name (`lollipop`) and username (`foreman`). Change the password (`5t1ck`):
+2.  Create a database and grant your users permissions on it. Change the database name (`webdata`) and username (`username`). Change the password (`password`):
 
-        create database lollipop;
-        grant all on lollipop.* to 'foreman' identified by '5t1ck';
+        create database webdata;
+        grant all on webdata.* to 'username' identified by 'password';
 
 3.  Exit MySQL:
 

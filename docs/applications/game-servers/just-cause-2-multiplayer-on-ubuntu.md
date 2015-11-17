@@ -1,8 +1,29 @@
+---
+author:
+    name: Linode Community
+    email: docs@linode.com
+description: 'Install and configure a Just Causew 2 Multiplayer server on Ubuntu 14.04.'
+keywords: 'just cause,just cause 2,game servers,games,ubuntu, ubuntu 14.04,steam'
+license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
+published: 'Friday, October 9th, 2015'
+modified: Friday, October 9th, 2015
+modified_by:
+    name: Linode
+title: 'Install and Configure a Just Cause 2 Multiplayer Server on Ubuntu 14.04'
+contributor:
+    name: Andrew Gottschling
+    link: https://github.com/agottschling
+---
+
+*This is a Linode Community guide. [Write for us](/docs/contribute) and earn $250 per published guide.*
+
+<hr>
+
 Just Cause 2 is a single-player game published by Square Enix. Because it has no multiplayer mode, the modding community has created a multiplayer mod for the game that is quite popular. This guide will explain how to prepare your VPS, install SteamCMD and then install and configure Just Cause 2's multiplayer mod.
 
-## Prerequisites
+## Before You Begin
 
-Have the following items available before you begin:
+Have the following items available:
 
 - A [Steam](http://store.steampowered.com) account.
 - A copy of [Just Cause 2](http://store.steampowered.com/app/8190/) that you have purchased on Steam.
@@ -44,7 +65,7 @@ If you have a firewall running on your Linode, add exceptions for SteamCMD:
 {: .note }
 > If you've configured your firewall according to our [Securing Your Server](/docs/security/securing-your-server) guide, be sure to add these port ranges to your `/etc/iptables.firewall.rules` file.
 
-## Install SteamCMD and Don’t Starve Together
+## Install SteamCMD and Just Cause 2
 
 1.  From your user's home folder, download SteamCMD into its own directory:
 
